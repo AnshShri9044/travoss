@@ -1,6 +1,5 @@
 import axios from "axios"
-
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api"
+import { API_URL } from "./api"
 
 class AgencyAuthService {
   async register(agencyName, ownerName, email, phone, password, drivingLicense, vehiclePhotos, location) {

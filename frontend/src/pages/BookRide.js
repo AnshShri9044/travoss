@@ -1,12 +1,11 @@
 import { useState, useEffect, useRef } from "react"
 import { MapPin, Calendar, Users, Car, Send, Loader, Navigation, X, Crosshair } from "lucide-react"
 import axios from "axios"
+import { API_URL } from "../services/api"
 import useAuth from "../hooks/useAuth"
 import { useSearchParams } from "react-router-dom"
 import Map, { Marker, NavigationControl } from "react-map-gl/mapbox"
 import "mapbox-gl/dist/mapbox-gl.css"
-
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api"
 // Note: Replace with your own Mapbox token from https://account.mapbox.com/
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN || ""
 

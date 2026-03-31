@@ -2,8 +2,7 @@ import { useState } from "react"
 import { Eye, EyeOff, X, Upload, MapPin, Loader } from "lucide-react"
 import { agencyAuthService } from "../services/agencyAuthService"
 import axios from "axios"
-
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api"
+import { API_URL } from "../services/api"
 
 export default function AgencyRegisterModal({ isOpen, onClose, onSwitchToLogin }) {
   const [showPassword, setShowPassword] = useState(false)

@@ -2,7 +2,7 @@ services:
   # 🚀 Travoss Backend (Node.js Express)
   - type: web
     name: travoss-backend
-    env: node
+    runtime: node
     plan: free
     rootDir: backend
     buildCommand: npm install
@@ -20,8 +20,9 @@ services:
         value: production
 
   # 🎨 Travoss Frontend (React Static)
-  - type: static
+  - type: web
     name: travoss-frontend
+    runtime: static
     plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
@@ -29,6 +30,5 @@ services:
     envVars:
       - key: REACT_APP_API_URL
         # Note: Render will fill this after backend is created.
-        # It's better to provide the full URL if known, or let Render construct it.
         # Below is the predicted URL based on service name "travoss-backend"
         value: https://travoss-backend.onrender.com/api
