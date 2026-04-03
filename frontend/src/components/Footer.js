@@ -92,24 +92,24 @@ export default function Footer() {
             <h3 className="font-semibold text-base text-foreground mb-6 dark:text-white">Support</h3>
             <ul className="space-y-4">
               <li>
-                <a href="#" className="text-foreground/65 hover:text-blue-600 transition-colors duration-200 font-medium text-sm dark:text-gray-400 dark:hover:text-white">
+                <button onClick={() => {}} className="text-foreground/65 hover:text-blue-600 transition-colors duration-200 font-medium text-sm dark:text-gray-400 dark:hover:text-white">
                   Help Center
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-foreground/65 hover:text-blue-600 transition-colors duration-200 font-medium text-sm dark:text-gray-400 dark:hover:text-white">
+                <button onClick={() => {}} className="text-foreground/65 hover:text-blue-600 transition-colors duration-200 font-medium text-sm dark:text-gray-400 dark:hover:text-white">
                   Privacy Policy
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-foreground/65 hover:text-blue-600 transition-colors duration-200 font-medium text-sm dark:text-gray-400 dark:hover:text-white">
+                <button onClick={() => {}} className="text-foreground/65 hover:text-blue-600 transition-colors duration-200 font-medium text-sm dark:text-gray-400 dark:hover:text-white">
                   Terms of Service
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-foreground/65 hover:text-blue-600 transition-colors duration-200 font-medium text-sm dark:text-gray-400 dark:hover:text-white">
+                <button onClick={() => {}} className="text-foreground/65 hover:text-blue-600 transition-colors duration-200 font-medium text-sm dark:text-gray-400 dark:hover:text-white">
                   FAQ
-                </a>
+                </button>
               </li>
             </ul>
           </div>

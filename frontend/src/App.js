@@ -14,14 +14,11 @@ import BookRide from "./pages/BookRide"
 import AgenciesNearYou from "./pages/AgenciesNearYou"
 import ContactSupport from "./pages/ContactSupport"
 import AgencyDashboard from "./pages/AgencyDashboard"
-import useAuth from "./hooks/useAuth"
 import { ThemeProvider } from "./context/ThemeContext"
 import "./App.css"
 
 function App() {
-  const { isAuthenticated } = useAuth()
   const [appReady, setAppReady] = useState(false)
-  const userType = localStorage.getItem("userType")
 
   useEffect(() => {
     setAppReady(true)

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { User, Mail, Phone, Edit2, Lock, LogOut, Camera } from "lucide-react"
+import { Mail, Phone, Edit2, Lock, LogOut, Camera } from "lucide-react"
 import useAuth from "../hooks/useAuth"
 import axios from "axios"
 
@@ -29,7 +29,7 @@ export default function UserProfile() {
     setSaving(true)
     try {
       const token = localStorage.getItem("token")
-      const response = await axios.put(
+      await axios.put(
         `${API_URL}/auth/profile`,
         formData,
         {

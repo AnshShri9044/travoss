@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Plus, Edit2, Trash2, Car as CarIcon } from "lucide-react"
+import { Plus, Trash2, Car as CarIcon } from "lucide-react"
 import axios from "axios"
 
 const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api"

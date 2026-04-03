@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { 
-  ArrowRight, MapPin, Users, Calendar, Shield, Award, 
-  Clock, Globe, Plane, Mountain, Palmtree, Building2 
-} from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0)

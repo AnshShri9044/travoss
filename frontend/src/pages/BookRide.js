@@ -1,8 +1,7 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useRef } from "react"
 import { MapPin, Calendar, Users, Car, Send, Loader, Navigation, X, Crosshair } from "lucide-react"
 import axios from "axios"
 import { API_URL } from "../services/api"
-import useAuth from "../hooks/useAuth"
 import { useSearchParams } from "react-router-dom"
 import Map, { Marker, NavigationControl } from "react-map-gl/mapbox"
 import "mapbox-gl/dist/mapbox-gl.css"
@@ -10,7 +9,6 @@ import "mapbox-gl/dist/mapbox-gl.css"
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN || ""
 
 export default function BookRide() {
-  const { user } = useAuth()
   const mapRef = useRef(null)
   const [searchParams] = useSearchParams()
   const agencyIdFromUrl = searchParams.get('agencyId')

@@ -93,9 +93,9 @@ export default function LoginModal({ isOpen, onClose, onSwitchToRegister }) {
 
           {/* Forgot Password Link */}
           <div className="flex justify-end">
-            <a href="#" className="text-sm text-primary hover:text-primary/80 transition-colors font-medium">
+            <button type="button" onClick={() => {}} className="text-sm text-primary hover:text-primary/80 transition-colors font-medium">
               Forgot password?
-            </a>
+            </button>
           </div>
 
           {/* Submit Button */}

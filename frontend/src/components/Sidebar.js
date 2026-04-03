@@ -1,9 +1,9 @@
-import { X, User, Car, MapPin, MessageCircle, LogOut } from "lucide-react"
+import { X, User, MapPin, MessageCircle, LogOut } from "lucide-react"
 import { Link } from "react-router-dom"
 import useAuth from "../hooks/useAuth"
 
 export default function Sidebar({ isOpen, onClose }) {
-  const { isAuthenticated, user, logout } = useAuth()
+  const { isAuthenticated, logout } = useAuth()
   const userType = localStorage.getItem("userType")
 
   if (!isOpen) return null

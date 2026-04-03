@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom"
-import { 
-  Plane, Mountain, Ship, Building2, Heart, Users, 
-  Car, Camera, Compass, Briefcase, Home, Ticket, ArrowRight 
-} from "lucide-react"
+import { Car, Home, Mountain, ArrowRight } from "lucide-react"
 
 export default function Services() {
   const services = [

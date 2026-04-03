@@ -8,7 +8,6 @@ export default function AgenciesNearYou() {
   const [agencies, setAgencies] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
-  const [userLocation, setUserLocation] = useState(null)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -38,7 +37,6 @@ export default function AgenciesNearYou() {
       navigator.geolocation.getCurrentPosition(
         async (position) => {
           const { latitude, longitude } = position.coords
-          setUserLocation({ latitude, longitude })
           setSearchLocation(`Current Location (${latitude.toFixed(2)}, ${longitude.toFixed(2)})`)
           
           try {

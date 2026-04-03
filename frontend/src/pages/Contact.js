@@ -1,5 +1,5 @@
 import { useState, useRef } from "react"
-import { Mail, Phone, MapPin, Send, MessageCircle, Clock, Globe } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Globe } from "lucide-react"
 import Map, { Marker } from "react-map-gl/mapbox"
 import "mapbox-gl/dist/mapbox-gl.css"
 
@@ -106,27 +106,6 @@ export default function Contact() {
     {
       q: "How can I track my booking?",
       ans: "Once you create an account and make a booking, you can track all your bookings in your dashboard. You'll also receive email and SMS updates.",
-    },
-  ]
-
-  const supportChannels = [
-    {
-      icon: MessageCircle,
-      title: "Live Chat",
-      description: "Chat with our support team",
-      available: "Available 24/7",
-    },
-    {
-      icon: Phone,
-      title: "Phone Support",
-      description: "Speak to our experts",
-      available: "Mon-Sat, 9 AM - 6 PM",
-    },
-    {
-      icon: Mail,
-      title: "Email Support",
-      description: "Get detailed assistance",
-      available: "Response within 24h",
     },
   ]
 

@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { Link, useLocation, useNavigate } from "react-router-dom"
-import { Menu, X, User, Building2, ChevronDown, MapPin, MessageCircle, Sun, Moon } from "lucide-react"
+import { Link, useLocation } from "react-router-dom"
+import { Menu, X, User, Building2, ChevronDown, MapPin, Sun, Moon } from "lucide-react"
 import LoginModal from "./LoginModal"
 import RegisterModal from "./RegisterModal"
 import AgencyLoginModal from "./AgencyLoginModal"
@@ -20,7 +20,6 @@ export default function Navigation() {
   const [agencyMenuOpen, setAgencyMenuOpen] = useState(false)
   const location = useLocation()
   const { isAuthenticated, user, logout } = useAuth()
-  const navigate = useNavigate()
   const { theme, toggleTheme } = useTheme()
 
   const links = [

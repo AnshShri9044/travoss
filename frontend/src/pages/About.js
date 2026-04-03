@@ -1,14 +1,12 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { Target, Eye, Heart, Award, Users, TrendingUp, Shield, Zap } from "lucide-react"
 
 export default function About() {
-  const [visibleItems, setVisibleItems] = useState(new Set())
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setVisibleItems((prev) => new Set([...prev, entry.target.id]))
+          // Entry is visible
         }
       })
     })
